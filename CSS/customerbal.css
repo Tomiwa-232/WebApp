@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --color-primary: #414141;
+    --color-bg: #E7E8ED;
+    --color-bg1: #BFC0C6;
+    --color-bg2: #F4F5F8;
+    --color-bg-accent: #A4A6AC;
+    --color-text-dark: #1c1c1d;
+    --color-text-light: #FFFFFF;
+    --color-border: #D1D2D6;
+    --color-success: #2ECC71;
+    --color-warning: #F39C12;
+    --color-danger: #E74C3C;
+    --color-danger-variant: rgba(231, 72, 60, 0.4);
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: auto;
+    background-color: var(--color-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 0.5rem 5rem rgba(0, 0, 0, 0.60);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.815); */
+}
+
+.customerbal-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customerbal-header h2 {
+    font-size: 24px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.customerbal-form {
+    width: auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-dark);
+}
+
+.form-group input[type="text"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+    font-size: 14px;
+}
+
+#name {
+    width: 100%;
+}
+
+.table-section {
+    margin-top: 20px;
+}
+
+.table-container {
+    max-height: 280px;
+    overflow-y: auto;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+thead th {
+    background-color: var(--color-bg1);
+    color: var(--color-text-light);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-bg2);
+}
+
+tbody tr:hover {
+    background-color: var(--color-bg-accent);
+    cursor: context-menu;
+}
+
+/* Custom scrollbar styling */
+.table-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: var(--color-bg1);
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    border: 2px solid var(--color-bg1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.btn-secondary {
+    background-color: var(--color-bg-accent);
+    color: var(--color-text-light);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-text-dark);
+    border: 1px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    color: var(--color-text-dark);
+    border: 1px solid var(--color-bg-accent);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-buttons .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+}
+
+.navigation-buttons .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.navigation-buttons .btn-secondary {
+    background-color: var(--color-bg-accent);
+    color: var(--color-text-light);
+}
+
+.navigation-buttons .btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-text-dark);
+    border: 1px solid var(--color-primary);
+}
+
+.navigation-buttons .btn-secondary:hover {
+    background-color: transparent;
+    color: var(--color-text-dark);
+    border: 1px solid var(--color-bg-accent);
+}

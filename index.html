@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container login-container">
+        <form class="login-form">
+            <div class="login-title">
+                <span class="login-title-icon">
+                    <i class="fa-solid fa-users"></i>
+                </span>
+                <h2>Login</h2>
+            </div>
+            <div class="form-group">
+                <label for="user-type">User Type</label>
+                <select id="user-type">
+                    <option>Admin</option>
+                    <option>User</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <a href="#" class="restore-pass">Restore Password</a>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">OK</button>
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+            <!-- NEXT Button -->
+            <button type="button" class="btn btn-next" onclick="goToInventory()">Next</button>
+        </form>
+    </div>
+
+    <script>
+        function goToInventory() {
+            window.location.href = "inventory.html";  // Replace with the actual URL of the inventory page
+        }
+    </script>
+</body>
+
+</html>

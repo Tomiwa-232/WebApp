@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Section</title>
+    <link rel="stylesheet" href="/CSS/payment.css">
+    
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="payment-header">
+            <h2>Payment Section</h2>
+        </div>
+
+        <form class="payment-form">
+            <div class="form-group">
+                <label for="payment-type">Payment Type:</label>
+                <select id="payment-type">
+                    <option value="cash">Cash In</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="total-dues">Total Dues:</label>
+                <input type="number" id="total-dues" value="0.00">
+            </div>
+            <div class="form-group">
+                <label for="pay">Pay:</label>
+                <input type="number" id="pay" value="0.00">
+            </div>
+            <div class="form-group">
+                <label for="remaining">Remaining:</label>
+                <input type="number" id="remaining" value="0.00">
+            </div>
+            <div class="form-group">
+                <label for="method-of-payment">Method of Payment:</label>
+                <select id="method-of-payment">
+                    <option value="cash">Cash</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bank">Bank:</label>
+                <select id="bank">
+                    <option value="cash"></option>
+                    <option value="cash"></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes:</label>
+                <input type="text" id="notes">
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+            </div>
+            <div class="form-group">
+                <label for="next-payment-date">Next Payment Date:</label>
+                <input type="date" id="next-payment-date">
+            </div>
+
+            <div class="form-group">
+                <label for="view-balance">View Balance to:</label>
+                <input type="date" id="view-balance">
+            </div>
+
+            <div class="buttons">
+                <button class="btn btn-primary">OK</button>
+                <button class="btn btn-secondary">Cancel</button>
+            </div>
+
+            <!-- Table Section -->
+            <div class="table-section">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Credit</th>
+                                <th>Debtor</th>
+                                <th>Statement</th>
+                                <th>Date</th>
+                                <th>Ser</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Sample row -->
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>Statement text</td>
+                                <td>2024-08-06</td>
+                                <td>1</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Display the totals -->
+            <div class="form-group">
+                <label for="debtor">Debtor:</label>
+                <input type="number" id="debtor" value="0">
+            </div>
+            <div class="form-group">
+                <label for="credit">Credit:</label>
+                <input type="number" id="credit" value="0">
+            </div>
+                <div class="form-group">
+                    <label for="net-balance">Net Balance:</label>
+                    <input type="number" id="net-balance" value="0">
+                </div>
+            </form>
+
+            <button class="btn btn-primary" onclick="window.print()">Print receipt</button>
+
+    
+            <!-- Navigation Buttons -->
+            <div class="navigation-buttons">
+                <a href="customer.html" class="btn btn-secondary">Previous</a>
+                <a href="treasury.html" class="btn btn-primary">Next</a>
+            </div>
+        </div>
+    </body>
+    
+    </html>
+    

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Inventory</title>
+    <link rel="stylesheet" href="/CSS/inventory.css">
+    
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="inventory-header">
+            <h2>Store Inventory</h2>
+        </div>
+        <form class="inventory-form">
+            <div class="form-section left">
+                <div class="form-group">
+                    <input type="checkbox" class="form-checkboxes" id="checkbox1">
+                    <select id="subcategory">
+                        <option value="" type="text" id="subcategory" ></option>
+                        <option value="">Subcategory</option>
+                    </select>
+                    <label for="subcategory">:Subcategory</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" class="form-checkboxes" id="checkbox2">
+                    <input type="text" id="empty-field" placeholder="">
+                    <select id="quan">
+                        <option value="" type="text" id="quan" >All</option>
+                    </select>
+                    
+                    <label for="quan">:Quan</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="itemname" placeholder="">
+                    <label for="itemname">:Item name</label>
+                </div>
+                <button type="button" id="load-button">Load</button>
+            </div>
+
+            <div class="form-section right">
+                <div class="form-group">
+                    <input type="checkbox" class="form-checkboxes" id="checkbox3">
+                    <select id="maincategory">
+                        <option value="" type="text" id="maincategory" ></option>
+                        <option value="">Main category</option>
+                    </select>
+                    <label for="maincategory">:Main category</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" class="form-checkboxes" id="checkbox4">
+                    <select id="store">
+                        <option value="" type="text" id="store" ></option>
+                        <option value="">Store</option>
+                    </select>
+                    <label for="store">:Store</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="code" placeholder="">
+                    <label for="code">:Code</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" class="form-checkboxes" id="checkbox5">
+                <label for="checkbox5" class="show-price">Show latest purchase price</label>
+                </div>
+                
+            </div>
+        </form>
+
+        <!-- Table Section -->
+        <div class="table-section">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Store</th>
+                            <th>Wh Tot</th>
+                            <th>Wh Price</th>
+                            <th>Tot Sale</th>
+                            <th>Sale Prc</th>
+                            <th>Tot Cost</th>
+                            <th>Cost</th>
+                            <th>Quan</th>
+                            <th>Item Name</th>
+                            <th>Code</th>
+                            <th>Ser</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stock1</td>
+                            <td>0.00</td>
+                            <td>6500</td>
+                            <td>0.00</td>
+                            <td>7500</td>
+                            <td>0.00</td>
+                            <td>5750</td>
+                            <td>0</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Stock2</td>
+                            <td>0.00</td>
+                            <td>4000</td>
+                            <td>0.00</td>
+                            <td>6000</td>
+                            <td>0.00</td>
+                            <td>4500</td>
+                            <td>5</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Stock3</td>
+                            <td>0.00</td>
+                            <td>1500</td>
+                            <td>0.00</td>
+                            <td>2000</td>
+                            <td>0.00</td>
+                            <td>1800</td>
+                            <td>10</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Stock4</td>
+                            <td>0.00</td>
+                            <td>800</td>
+                            <td>0.00</td>
+                            <td>1200</td>
+                            <td>0.00</td>
+                            <td>900</td>
+                            <td>20</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Stock5</td>
+                            <td>0.00</td>
+                            <td>7000</td>
+                            <td>0.00</td>
+                            <td>9000</td>
+                            <td>0.00</td>
+                            <td>8500</td>
+                            <td>3</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Stock6</td>
+                            <td>0.00</td>
+                            <td>300</td>
+                            <td>0.00</td>
+                            <td>450</td>
+                            <td>0.00</td>
+                            <td>400</td>
+                            <td>15</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Stock7</td>
+                            <td>0.00</td>
+                            <td>300</td>
+                            <td>0.00</td>
+                            <td>450</td>
+                            <td>0.00</td>
+                            <td>400</td>
+                            <td>15</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>7</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Stock8</td>
+                            <td>0.00</td>
+                            <td>300</td>
+                            <td>0.00</td>
+                            <td>450</td>
+                            <td>0.00</td>
+                            <td>400</td>
+                            <td>15</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>8</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Stock9</td>
+                            <td>0.00</td>
+                            <td>300</td>
+                            <td>0.00</td>
+                            <td>450</td>
+                            <td>0.00</td>
+                            <td>400</td>
+                            <td>15</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>9</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Stock10</td>
+                            <td>0.00</td>
+                            <td>300</td>
+                            <td>0.00</td>
+                            <td>450</td>
+                            <td>0.00</td>
+                            <td>400</td>
+                            <td>15</td>
+                            <td>WAC-S 12 C LOMO</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Buttons Section -->
+        <div class="form-buttons">
+            <button class="btn btn-primary" onclick="window.print()">Print</button>
+            <div class="form-group">
+                <input type="checkbox" id="with-quan">
+                <label for="with-quan">With Quan</label>
+            </div>
+            <button class="btn btn-secondary" onclick="window.close()">Close</button>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button class="btn btn-secondary" onclick="window.location.href='index.html'">Previous</button>
+            <button class="btn btn-primary" onclick="window.location.href='customerbal.html'">Next</button>
+        </div>
+    </div>
+</body>
+
+</html>

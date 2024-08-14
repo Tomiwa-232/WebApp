@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer balances</title>
+    <link rel="stylesheet" href="/CSS/customerbal.css">
+    
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="customerbal-header">
+            <h2>Customer balances</h2>
+        </div>
+        <form class="customerbal-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="">
+                <label for="name">:Name</label>
+            </div>
+        </form>
+
+        <!-- Table Section -->
+        <div class="table-section">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>3000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>4000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>6000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>7000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>8000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>9000</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>10000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <button class="btn btn-secondary" onclick="window.pay()">Pay</button>
+            <button class="btn btn-primary" onclick="window.viewinstallments()">View installments</button>
+            <button class="btn btn-secondary" onclick="window.close()">Close</button>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button class="btn btn-secondary" onclick="window.location.href='inventory.html'">Previous</button>
+            <button class="btn btn-primary" onclick="window.location.href='customer.html'">Next</button>
+        </div>
+    </div>
+</body>
+
+</html>
