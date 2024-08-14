@@ -44,6 +44,6 @@ License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Contact
-For any inquiries or questions, feel free to contact me at yotiayotomiwa@gmail.com.
+For any inquiries or questions, feel free to contact me at otiayotomiwa@gmail.com.
 
 Note: This project is part of a larger initiative to modernize legacy desktop applications by transitioning them to web platforms. The focus is on UI/UX design and maintaining functionality consistency with the original desktop version.
